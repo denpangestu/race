@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="leftcolumn">
+            <div id="gameCanvas">
+                <div class="player" id="player1">Player 1</div>
+                <div class="player" id="player2">Player 2</div>
+                <div class="player" id="player3">Player 3</div>
+                <div class="player" id="player4">Player 4</div>
+                <div class="player" id="player5">Player 5</div>
+                <div id="finishLine"></div>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <h1>Papan Score</h1>
+                <div id="player1WinsLabel">Player 1 Wins:</div>
+                <div id="player1Wins">0</div>
+                <div id="player2WinsLabel">Player 2 Wins:</div>
+                <div id="player2Wins">0</div>
+                <div id="player3WinsLabel">Player 3 Wins:</div>
+                <div id="player3Wins">0</div>
+                <div id="player4WinsLabel">Player 4 Wins:</div>
+                <div id="player4Wins">0</div>
+                <div id="player5WinsLabel">Player 5 Wins:</div>
+                <div id="player5Wins">0</div>
+            </div>
+        </div>
+    </div>    
+    <script src="script.js"></script>
+</body>
+
+</html>

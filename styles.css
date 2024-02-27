@@ -1,0 +1,164 @@
+.row {
+    display: flex;
+}
+
+.leftcolumn {
+    flex: 1; /* Menyesuaikan lebar kolom secara fleksibel */
+    padding: 20px;
+}
+
+.rightcolumn {
+    flex: 1; /* Menyesuaikan lebar kolom secara fleksibel */
+    padding: 20px;
+}
+
+/* Styling untuk card */
+.card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#gameCanvas {
+    width: 1280px;
+    height: 630px;
+    background-image: url('assets/road.png');
+    position: relative;
+    overflow: hidden;
+}
+
+.player {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    background-size: cover;
+}
+
+
+@keyframes changeImage {
+    0% {
+        background-image: url('assets/walk_1.png');
+    }
+
+    10% {
+        background-image: url('assets/walk_2.png');
+    }
+
+    20% {
+        background-image: url('assets/walk_3.png');
+    }
+
+    30% {
+        background-image: url('assets/walk_4.png');
+    }
+
+    40% {
+        background-image: url('assets/walk_5.png');
+    }
+
+    50% {
+        background-image: url('assets/walk_6.png');
+    }
+
+    60% {
+        background-image: url('assets/walk_7.png');
+    }
+
+    70% {
+        background-image: url('assets/walk_8.png');
+    }
+
+    80% {
+        background-image: url('assets/walk_9.png');
+    }
+
+    90% {
+        background-image: url('assets/walk_10.png');
+    }
+
+    100% {
+        background-image: url('assets/walk_1.png');
+    }
+}
+
+#player1 {
+    background-size: 100% 100%;
+    left: 0;
+    top: 0;
+    animation: changeImage 1s infinite;
+    font-weight: bold;
+    text-align: center;
+    color: blanchedalmond;
+    text-shadow: 2px 2px 4px darkred;
+    font-size: 24px;    
+}
+
+
+
+#player2 {
+    background-size: 100% 100%;
+    left: 0;
+    top: 124px;
+    animation: changeImage 1s infinite;
+    font-weight: bold;
+    text-align: center;
+    color: blanchedalmond;
+    text-shadow: 2px 2px 4px darkred;
+    font-size: 24px;  
+}
+
+#player3 {
+    background-size: 100% 100%;
+    left: 0;
+    top: 250px;
+    animation: changeImage 1s infinite;
+    font-weight: bold;
+    text-align: center;
+    color: blanchedalmond;
+    text-shadow: 2px 2px 4px darkred;
+    font-size: 24px;  
+}
+
+#player4 {
+    background-size: 100% 100%;
+    left: 0;
+    top: 376px;
+    animation: changeImage 1s infinite;
+    font-weight: bold;
+    text-align: center;
+    color: blanchedalmond;
+    text-shadow: 2px 2px 4px darkred;
+    font-size: 24px;  
+}
+
+#player5 {
+    background-size: 100% 100%;
+    left: 0;
+    top: 502px;
+    animation: changeImage 1s infinite;
+    font-weight: bold;
+    text-align: center;
+    color: blanchedalmond;
+    text-shadow: 2px 2px 4px darkred;
+    font-size: 24px;  
+}
+
+/* styles.css */
+
+#player1WinsLabel,
+#player2WinsLabel,
+#player3WinsLabel,
+#player4WinsLabel,
+#player5WinsLabel {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#player1Wins,
+#player2Wins,
+#player3Wins,
+#player4Wins,
+#player5Wins {
+    margin-bottom: 20px;
+}
